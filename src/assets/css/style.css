@@ -1,0 +1,392 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    background-color: #000;
+}
+.main-wrraper {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    width: 350px;
+    height: 95%;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 30px;
+    color: #000;
+    position: relative;
+    overflow: auto;
+}
+.containe-home-screen {
+    overflow: hidden;
+}
+.container::-webkit-scrollbar { 
+    width: 0 !important 
+}
+.logo-image {
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.logo-image img {
+    width: 100%;
+    height: 100%;
+}
+.home-screen {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.content-home {
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+}
+.content-home .home-titled {
+    font-size: 45px;
+    margin-bottom: 30px;
+    padding: 0;
+    text-align: center;
+    color: #ffd90d;
+    line-height: initial;
+}
+.content-home p {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 15px;
+    margin: 0;
+    text-align: center;
+}
+.home-btn-log {
+    width: 100%;
+}
+.home-btn-log ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+}
+.home-btn-log ul li {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.home-btn-log ul li a {
+    width: 160px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.home-btn-log ul li a:last-child {
+    border: 1px solid #fff;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+}
+.home-btn-log ul li a:first-child {
+    background-color: #ffd90d;
+    border: 1px solid #ffd90d;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+}
+.home-btn-log ul li a:first-child:hover {
+    background-color: transparent;
+    border: 1px solid #ffd90d;
+    color: #000;
+    font-weight: 600;
+    font-size: 20px;
+}
+.home-btn-log ul li a:last-child:hover {
+    border: 1px solid #ffd90d;
+    background-color: #ffd90d;
+    color: #fff;
+    transition: 0.5s;
+}
+.home-screen::after{
+    content: "";
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background-color: #ffd90d;
+    border-radius: 50%;
+}
+.home-screen::before{
+    content: "";
+    position: absolute;
+    bottom: -150px;
+    left: -150px;
+    width: 400px;
+    height: 400px;
+    background-color: #ffd90d;
+    border-radius: 50%;
+}
+/*  =============== welcome screen css code date  : 21/03/2023 ================ */
+.welcome-screeen .logo-image {
+    width: 100%;
+    max-width: 150px;
+    margin: 100px auto 0;
+}
+.welcome-box {
+    background-color: #ffd90d;
+    position: relative;
+    width: 100%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    padding: 80px 30px;
+}
+.welcome-screeen {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.welcome-box h1 {
+    padding: 0;
+    margin-bottom: 25px;
+    line-height: initial;
+    width: 100%;
+    text-align: left;
+    font-size: 32px;
+    font-weight: 600;
+}
+.welcome-box p {
+    padding: 0;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    display: block;
+    text-align: left;
+}
+.welcome-box .btn-login-and-sign {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.welcome-box .btn-login-and-sign a {
+    width: 45%;
+    display: block;
+    text-align: center;
+    height: 45px;
+    line-height: 45px;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+.welcome-box .btn-login-and-sign a:first-child {
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+}
+.welcome-box .btn-login-and-sign a:last-child {
+    background-color: #fff;
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+}
+.welcome-box .btn-login-and-sign a:first-child:hover, .welcome-box .btn-login-and-sign a:last-child:hover {
+    background-color: transparent;
+}
+/*  =============== welcome screen css code date  : 21/03/2023 ================ */
+
+/*  =============== Sign In screen css code date  : 21/03/2023 ================ */
+.py-0 {
+    padding: 0;
+}
+.sign-in-screen-cn {
+    background-color: #ffd90d;
+    position: relative;
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 30px 30px 80px 30px;
+}
+.sign-in-screen-cn h1 {
+    padding: 0;
+    margin-bottom: 15px;
+    line-height: initial;
+    width: 100%;
+    text-align: left;
+    font-size: 32px;
+    font-weight: 600;
+}
+.sign-in-screen-cn p {
+    padding: 0;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    display: block;
+    text-align: left;
+}
+.icon-arrow {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 30px;
+    margin: 0;
+}
+.icon-arrow a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+
+}
+.sign-in-fn {
+    /* border: 1px solid #000; */
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    padding: 40px 30px;
+    background-color: #fff;
+    margin-top: -50px;
+    width: 100%;
+    position: relative;
+    box-shadow: 0px 2px 32px rgb(0 0 0 / 11%);
+}
+.sign-in-form {
+    width: 100%;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+.sign-in-form input {
+    width: 100%;
+    display: block;
+    padding: 12px 20px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    border: 0;
+    background-color: rgb(243 243 243);
+    outline: none;
+}
+.sign-in-form input:focus {
+    outline: 1px solid #ffd90d;
+}
+.forget-btn .forget-inner {
+    display: block;
+    text-align: right;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+}
+.forget-btn .forget-inner:hover {
+    text-decoration: underline;
+    color: #ffd90d;
+}
+.sign-in-button button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: 45px;
+    border-radius: 50px;
+    outline: none;
+    border: 0;
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.account-verfy {
+    width: 100%;
+    height: 100%;
+    padding: 90px 30px;
+    margin: 0;
+}
+.account-verfy a {
+    border: 1px solid #ffff;
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 50px;
+    background-color: #fff;
+    padding: 15px;
+    text-decoration: none;
+    color: #000;
+    box-shadow: 0 14px 26px rgb(0 0 0 / 11%), 0 4px 4px rgb(0 0 0 / 5%);
+}
+.account-verfy a img {
+    width: 100%;
+    max-width: 30px;
+    padding: 0;
+    margin: 0;
+    height: auto;
+}
+/*  =============== Sign In screen css code date  : 21/03/2023 ================ */
+
+/*  =============== Sign Up screen css code date  : 21/03/2023 ================ */
+.forget-inner-allready {
+    display: block;
+    text-align: right;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+}
+.account-verfy-sin-up {
+    width: 100%;
+    height: 100%;
+    padding: 25px 30px;
+    margin: 0;
+    /* border: 1px solid #000; */
+}
+.account-verfy-sin-up a {
+    border: 1px solid #ffff;
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 50px;
+    background-color: #fff;
+    padding: 15px;
+    text-decoration: none;
+    color: #000;
+    box-shadow: 0 14px 26px rgb(0 0 0 / 11%), 0 4px 4px rgb(0 0 0 / 5%);
+}
+.account-verfy-sin-up a img {
+    width: 100%;
+    max-width: 30px;
+    padding: 0;
+    margin: 0;
+    height: auto;
+}
+/*  =============== Sign Up screen css code date  : 21/03/2023 ================ */

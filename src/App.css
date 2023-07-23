@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container::-webkit-scrollbar {
+  display: none;
+}
+.perents-application-class::before {
+  content: "";
+  position: absolute;
+  bottom: -150px;
+  left: -150px;
+  width: 400px;
+  height: 400px;
+  background-color: #ffd90d;
+  border-radius: 50%;
+}
+.perents-application-class::after {
+  content: "";
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 200px;
+  height: 200px;
+  background-color: #ffd90d;
+  border-radius: 50%;
+}
